@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yerba">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yerba Project</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body ng-controller="mainController">
+    <div class="container">
+        <div class="input-container">
+            <input type="text" placeholder="Enter Username" ng-model="user.login">
+        </div>
+        <div class="input-container">
+            <input type="password" placeholder="Enter Password" ng-model="user.password">
+        </div>
+        <div class="input-container">
+            <select ng-model="user.type">
+                <option value="provider">Provider</option>
+                <option value="recipient">Recipient</option>
+                <option value="insurer">Insurer</option>
+            </select>
+        </div>
+        <button type="submit" ng-click="login(user)">Submit</button>
+    </div>
+</body>
+
+<!-- Third Parties -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+
+<!-- Custom JS -->
+<script type="text/javascript" src="./app.js"></script>
+
+</html>
