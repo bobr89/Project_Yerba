@@ -1,0 +1,18 @@
+label.upload-group
+{
+width: 60px;
+height: 20px;
+color: white;
+padding: 5 5 5 5; 
+}
+
+
+input#file{
+width:.01px;
+height: .01px;
+position: absolute;
+z-index: -1;
+
+
+
+}
