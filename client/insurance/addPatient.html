@@ -1,0 +1,16 @@
+<head></head>
+
+<body ng-controller="mainController">
+    <h1>Add Patient</h1>
+    <form>
+        <div class="container">
+            <label for="firstName">First Name</label>
+            <input name="firstName" ng-model="newUser.firstName">
+            <label for="lastName">Last Name</label>
+            <input name="lastName" ng-model="newUser.lastName">
+            <label for="memberId">Member Id</label>
+            <input name="memberId" ng-model="newUser.memberId">
+            <button ng-click="addPatient(newUser)">Submit</button>
+        </div>
+    </form>
+</body>
